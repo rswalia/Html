@@ -2,14 +2,21 @@
 <html>
     <head>
         <title>Payment Form</title>
+        <!-- <link rel="stylesheet" href="forms.cyberbuddy.io/style.css"> -->
     </head>
-    <body style="background-color: darkkhaki;">
+    <body style="background-color: burlywood;">
         <form action="">
             <h1 style="text-align: center;">Payment Form</h1>
         <ul>
             <li><h2>Contact Information</h2></li>
 
-            <p>Name: <input type="text" name="name" required></p>
+            <div class="name">
+            <p>
+                Name: <input type="text" name="name" required>
+            </p>
+            </div>
+
+            <div class="gender">
             <fieldset>
                 <legend>Gender</legend>
             <p>
@@ -17,13 +24,30 @@
                 Female <input type="radio" name="gender" id="gender" required> 
             </p>
             </fieldset>
-            <p>Address: <textarea name="" id="" cols="80" rows="10"></textarea></p>
-            <p>Email: <input type="email" name="email" id="email" required></p>
-            <p>Pincode: <input type="number" name="pin" id="pin" required></p>
+            </div>
+
+            <div class="address">
+            <p>
+                Address: <textarea name="" id="" cols="80" rows="10"></textarea>
+            </p>
+            </div>
+
+            <div class="email">
+            <p>
+                Email: <input type="email" name="email" id="email" required>
+            </p>
+            </div>
+
+            <div class="pin">
+            <p>
+                Pincode: <input type="number" name="pin" id="pin" required>
+            </p>
+            </div>
             <hr>
 
             <li><h2>Payment Information</h2></li>
         </ul>
+            <div class="type">
             <p>Card Type:
                 <select name="card_type" id="card_type">
                     <option value=""> --Select a card type-- </option>
@@ -31,17 +55,30 @@
                     <option value="Mastercard">Mastercard</option>
                 </select>
             </p>
+            </div>
+
+            <div class="num">
             <p>
                 Card Number: <input type="number" name="card_number" id="card_number" required> 
             </p>
+            </div>
+
+            <div class="exp">
             <p>
                 Expiration Date: <input type="date" name="date" id="date" required> 
             </p>
+            </div>
+
+            <div class="cvv">
             <p>
             CVV: <input type="password" name="cvv" id="cvv" required>
             </p>
+            </div>
+
+            <div class="submit">
             <input type="submit" value="Pay Now">
             <input type="submit" value="Reset">
+            </div>
 
         </form>
     </body>
